@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Piedra", cursive;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #727272;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+body h1 {
+  font-size: 64px;
+  color: #fff;
+  text-shadow: -7px 7px 5px #000;
+}
+
+body .btns {
+  position: relative;
+  width: 30%;
+  height: 20%;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .btns button {
+  width: 45%;
+  height: 40%;
+  font-size: 24px;
+  border: 5px solid #000;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  outline: none;
+}
+
+body .btns .left {
+  -webkit-transform: rotateY(40deg);
+          transform: rotateY(40deg);
+  -webkit-box-shadow: -5px 5px 5px #272727, -15px 15px 0px #ffee00, -20px 20px 5px #000;
+          box-shadow: -5px 5px 5px #272727, -15px 15px 0px #ffee00, -20px 20px 5px #000;
+}
+
+body .btns .right {
+  -webkit-transform: rotateY(-40deg);
+          transform: rotateY(-40deg);
+  -webkit-box-shadow: 5px 5px 5px #000, 15px 15px 0px #ff0000 , 20px 20px 5px #000;
+          box-shadow: 5px 5px 5px #000, 15px 15px 0px #ff0000 , 20px 20px 5px #000;
+}
+
+body .btns button:hover {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-box-shadow: 0px 0px 0px;
+          box-shadow: 0px 0px 0px;
+  background-color: #a4c6ec;
+}
+
+body img {
+  width: 30%;
+}
+
+body img:hover {
+  cursor: none;
+}
+
+body .update-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffee00;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+body .update-page form {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px #000;
+          box-shadow: 0px 0px 5px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+body .update-page form h1 {
+  color: #000;
+  text-shadow: none;
+  margin-bottom: 40px;
+}
+
+body .update-page form .row {
+  margin: 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+body .update-page form .row .input-label {
+  font-size: 24px;
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body .update-page form .row input {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin: 3px auto;
+  height: 30px;
+  font-size: 18px;
+  outline: none;
+}
+
+body .update-page form .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+body .update-page form .btn button {
+  width: 45%;
+  height: 50px;
+  font-size: 20px;
+  border: 5px solid #000;
+  cursor: pointer;
+  outline: none;
+}
+
+body .update-page form .btn button:hover {
+  background-color: #727272;
+  color: #fff;
+}
+
+body .view-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+body .view-page h1 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+body .view-page table {
+  text-align: center;
+  width: 90%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+body .view-page table tr,
+body .view-page table th,
+body .view-page table td {
+  border: 1px solid #000;
+}
+
+body .view-page table th {
+  font-size: 24px;
+}
+
+body .view-page table td {
+  font-size: 18px;
+}
+
+body .view-page button {
+  width: 20%;
+  height: 50px;
+  font-size: 20px;
+  outline: none;
+  border: 5px solid #000;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+body .view-page button:hover {
+  background-color: #727272;
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */
