@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/Me_Vector_1x1.jpg" type="image/x-icon">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Welcome To Drinks Menu</h1>
+    <div class="btns">
+        <button type="button" class="left">Update Menu</button>
+        <button type="button" class="right">View Menu</button>
+    </div>
+    <img src="./images/cup.svg" alt="cup" id="cup">
+
+    <div class="update-page">
+        <form action="#" method="POST">
+            <h1>Add Drink</h1>
+            <div class="row">
+                <label for="drink_name" class="input-label">Name</label>
+                <input type="text" name="drink_name" class="input-box" autocomplete="off">
+            </div>
+
+            <div class="row">
+                <label for="main" class="input-label">Main</label>
+                <input type="text" name="main" class="input-box" autocomplete="off">
+                <label for="amount1" class="input-label">Amount</label>
+                <input type="text" name="amount1" class="input-box" autocomplete="off">
+            </div>
+
+            <div class="row">
+                <label for="second" class="input-label">Second</label>
+                <input type="text" name="second" class="input-box" autocomplete="off">
+                <label for="amount2" class="input-label">Amount</label>
+                <input type="text" name="amount2" class="input-box" autocomplete="off">
+            </div>
+
+            <div class="row">
+                <label for="directions" class="input-label">Directions</label>
+                <input type="text" name="directions" class="input-box" autocomplete="off">
+            </div>
+
+            <div class="row btn">
+                <button type="submit">Save</button>
+                <button type="button" onclick="goHome('.update-page')">Home</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="view-page">
+        <h1>Drinks Menu</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Main</th>
+                <th>Amount</th>
+                <th>Second</th>
+                <th>Amount</th>
+                <th>Directions</th>
+            </tr>
+            
+        </table>
+
+        <button type="button" onclick="goHome('.view-page')">Home</button>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
